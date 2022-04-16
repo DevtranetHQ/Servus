@@ -1,12 +1,12 @@
-from cgi import test
-import servus
 import asyncio
+import servus    
+import aiohttp
+
 
 async def main():
-    testClient = servus.aioclient.AioRequestsClient()
-    response = await testClient.get("http://httpbin.org")
-    print("My Response",response)
-
-    await testClient.close_client()
+    session = aiohttp.ClientSession()
+    r = await servus.get(session,"https://reqres.in/api/users?page=2")
+    print(type(r.json))
+    
 
 asyncio.run(main())
