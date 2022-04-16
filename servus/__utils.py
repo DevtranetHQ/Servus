@@ -2,7 +2,7 @@ import aiohttp
 from .models import AioHttpResponseWrapper, RESPONSE_PROPS
 import json
 
-async def unwrapResponse(resp:aiohttp.ClientResponse):
+async def parseResponse(resp:aiohttp.ClientResponse):
     data = dict().fromkeys(RESPONSE_PROPS, {})
 
     data["response"] = resp
