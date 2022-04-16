@@ -5,7 +5,7 @@ from discord.ext import commands
 import asyncio
 import servus
 
-MY_TOKEN = "OTQzMjAxMTk0MDA2OTYyMjE4.YgvmkA.jitbaVT5oltkkwtduHDeai_ZxLQ"
+MY_TOKEN = "<YOUR_TOKEN>"
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"))
 
