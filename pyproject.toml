@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "servus"
+version = "1.0.0"
+description = "Human-friendly wrapper around the aiohttp library for making asynchronous web requests"
+
+authors = ["TobeTek <katchyemma@gmail.com>"]
+license = "Apache 2.0 License"
+
+readme = "README.md"
+homepage = "https://github.com/TheDynamics/servus"
+repository = "https://github.com/TheDynamics/servus"
+documentation = "https://TheDynamics.github.io/servus"
+
+keywords = ["async", "asyncio", "aiohttp", "requests", "web"]
+
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = ">=3.6.0,<3.8.0"
+"discord.py" = {version="^1.7.3", optional=true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-httpbin = "^1.0.2"
+httpbin = "^0.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
