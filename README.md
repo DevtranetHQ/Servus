@@ -15,7 +15,7 @@ import asyncio
 
 async def main():
 	# Create a new session
-	mySession = aiohttp.ClientSession()
+	mySession = servus.ClientSession()
 	
 	# Use Servus to send a request. 
 	# Servus automatically parses and serializes the response, and returns a ready to use object
