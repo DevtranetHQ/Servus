@@ -3,6 +3,9 @@
 
 # Servus
 
+[![PyPI version](https://badge.fury.io/py/servus.svg)](https://badge.fury.io/py/servus) [![PyPI license](https://img.shields.io/pypi/l/servus)](https://pypi.org/project/servus/1.0.0/)
+
+<br>
 A wrapper for the aiohttp library for making asynchronous web requests in Python.
 
 Trying to preserve speed and flexibility provided by `aiohttp`, without sacrificing the human-friendliness of `requests`,  `servus` abstracts using client sessions and context managers when making asynchronous HTTP requests in Python.
